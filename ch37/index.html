@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+	
+		function totalAmount(merchTot){
+			var amountTotal;
+			
+			if (merchTot >= 100){
+				amountTotal = merchTot;
+			}
+			
+			else if(merchTot >= 50) {
+				amountTotal = merchTot + 5;
+			}
+			
+			else {amountTotal = merchTot + 5 + (0.3 +(merchTot - 50))
+				
+				
+			}
+			return amountTotal;
+			}
+			
+			
+			var forFun1 = prompt("Enter value for Function 1");
+			forFun1 = Number(forFun1);
+			alert(totalAmount(forFun1));
+			
+			function addFun(one, two){
+			
+				document.write(one + two);
+				
+				
+			}
+
+			addFun(10,totalAmount(forFun1));
+
+
+		
+   
+    </script>
+</body>
+</html>
